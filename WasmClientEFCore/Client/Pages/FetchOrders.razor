@@ -1,0 +1,49 @@
+﻿@page "/fetchorders"
+@inject HttpClient Http
+
+<h1>Orders</h1>
+
+<p>This component demonstrates fetching data from the server.</p>
+
+@if (orders == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Customer Id</th>
+                <th>Customer Name</th>
+                <th>Order Date</th>
+                <th>Total Quantity</th>
+                <th>Total Weight</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var order in orders)
+            {
+                <tr>
+                    <td>@order.CustomerId</td>
+                    <td>@order.CustomerName</td>
+                    <td>@order.OrderDate</td>
+                    <td>@order.OrderDetails.Sum(x => x.Quantity)</td>
+                    <td>@order.OrderDetails.Sum(x => x.Weight)</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<Order> orders;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var orderJson = await Http.GetStringAsync("Order");
+
+        orders = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Order>>(orderJson);
+    }
+
+}
