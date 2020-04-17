@@ -16,8 +16,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\WasmClientEFCore.Db.Migrations\WasmClientEFCore.Db.Migrations.csproj" />
-    <ProjectReference Include="..\..\WasmClientEFCore.Db\WasmClientEFCore.Db.csproj" />
-    <ProjectReference Include="..\Client\WasmClientEFCore.Client.csproj" />
+    <ProjectReference Include="..\WasmClientEFCore.Client\WasmClientEFCore.Client.csproj" />
+    <ProjectReference Include="..\WasmClientEFCore.Db.Migrations\WasmClientEFCore.Db.Migrations.csproj" />
+    <ProjectReference Include="..\WasmClientEFCore.Db\WasmClientEFCore.Db.csproj" />
   </ItemGroup>
 </Project>

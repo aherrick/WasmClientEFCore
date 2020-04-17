@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30001.183
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WasmClientEFCore.Server", "WasmClientEFCore\Server\WasmClientEFCore.Server.csproj", "{D708DCBC-E658-48FC-9BFE-83B297604955}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WasmClientEFCore.Server", "WasmClientEFCore.Server\WasmClientEFCore.Server.csproj", "{D708DCBC-E658-48FC-9BFE-83B297604955}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WasmClientEFCore.Client", "WasmClientEFCore\Client\WasmClientEFCore.Client.csproj", "{270D03A4-0BE6-45C8-807B-FC43DC98483D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WasmClientEFCore.Client", "WasmClientEFCore.Client\WasmClientEFCore.Client.csproj", "{270D03A4-0BE6-45C8-807B-FC43DC98483D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WasmClientEFCore.Db", "WasmClientEFCore.Db\WasmClientEFCore.Db.csproj", "{5EEFD901-1BEA-4BAF-B554-F2FDD4B2EE33}"
 EndProject
